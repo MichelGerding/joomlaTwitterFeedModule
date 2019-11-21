@@ -2,9 +2,9 @@
 ### How to use this module
 To use this module you need the followig things:
 - a joomla site
-- Twitter handle of the feed you want to display [how to get a twitter handle](# "how to get a twitter handle")
-- A twitter developer acount
-- Authentivication tokens [how to get the acces tokens](# "how to get the acces tokens")
+- Twitter handle of the feed you want to display
+- A twitter developer account. [How to get a twitter developer account](https://developer.twitter.com/ "how to get a twitter developer account")
+- Authentivication tokens. [how to get the acces tokens](https://developer.twitter.com/en/docs/basics/authentication/guides/access-tokens "how to get the acces tokens")
     - api key
     - api secret
     - acces token
