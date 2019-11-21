@@ -13,7 +13,7 @@ To use this module you need the followig things:
 
 #### How to install the module
  First you need to download the module or get the link to for the [download](#download "Download link") when you have the module or download link you need to log into the administrator page of your website 
- ![Log in to the administrator page](https://github.com/MichelGerding/joomlaTwitterFeedModule/blob/master/images/image_login.png "Log in to the administrator page")
+ ![Log in to the administrator page](./images/install.PNG "Log in to the administrator page")
  after you are logged-in you need to go to the module management page
  ![Go to the module controll page](https://github.com/MichelGerding/joomlaTwitterFeedModule/blob/master/images/image_install_1.png "Go to the module manager")
  if you want to install the module by using a download link got to the chapter **installing using the download link**.
