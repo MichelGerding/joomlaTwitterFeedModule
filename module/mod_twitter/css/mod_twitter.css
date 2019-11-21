@@ -1,0 +1,97 @@
+.tks-twitter-item .tks-twitter-body {
+	 position: relative;
+	 overflow: hidden;
+	 height: 350px;
+}
+ .tks-twitter-item .tks-twitter-body .tks-twitter-image {
+	 width: 100%;
+	 height: 100%;
+	 transition: all 0.33s;
+}
+ .tks-twitter-item .tks-twitter-body .tks-twitter-content {
+	 position: absolute;
+	 top: 0;
+	 left: 0;
+	 width: 100%;
+	 height: 100%;
+	 opacity: 0;
+	 font-size: 15px;
+	 transition: all 0.33s;
+	 background: rgba(0, 0, 0, 0.5);
+}
+ .tks-twitter-item .tks-twitter-body .tks-twitter-content .tks-twitter-message {
+	 position: absolute;
+	 left: 40px;
+	 top: 40px;
+	 right: 40px;
+	 bottom: 80px;
+	 text-align: left;
+	 -ms-hyphens: auto;
+	 -moz-hyphens: auto;
+	 -webkit-hyphens: auto;
+	 overflow-wrap: break-word;
+	 word-wrap: break-word;
+	 hyphens: auto;
+	 line-height: 25px;
+	 overflow: hidden;
+	 color: white!important;
+}
+ .tks-twitter-item .tks-twitter-body .tks-twitter-content .tks-twitter-date {
+	 position: absolute;
+	 top: 25px;
+	 left: 40px;
+	 font-size: 12px;
+	 /*opacity: 0;*/
+}
+ .tks-twitter-item .tks-twitter-body .tks-twitter-content .tks-twitter-likes {
+	 position: absolute;
+	 bottom: 40px;
+	 left: 40px;
+	 line-height: 12px;
+	 color: white!important;
+}
+ .tks-twitter-item .tks-twitter-body .tks-twitter-content .tks-twitter-likes i {
+	 margin-right: 5px;
+	 color: #ff007d;
+}
+ .tks-twitter-item .tks-twitter-body .tks-twitter-content .tks-twitter-leesmeer {
+	 position: absolute;
+	 bottom: 40px;
+	 right: 40px;
+	 line-height: 12px;
+}
+ .tks-twitter-item .tks-twitter-body .tks-twitter-content .tks-twitter-leesmeer a {
+	 color: white !important;
+}
+ .tks-twitter-item .tks-twitter-body .tks-twitter-content .tks-twitter-leesmeer a i {
+	 margin-left: 5px;
+}
+ .tks-twitter-item .tks-twitter-body .tks-twitter-content .tks-twitter-leesmeer a:hover {
+	 text-decoration: underline;
+}
+ .tks-twitter-item .tks-twitter-body:hover .tks-twitter-content {
+	 opacity: 1;
+}
+ .tks-twitter-item .tks-twitter-body:after {
+	 content: '';
+	 position: absolute;
+	 left: 0;
+	 top: 0;
+	 width: 100%;
+	 height: 100%;
+	 /*border: 6px solid #F1F1F1;*/
+	 pointer-events: none;
+}
+ .owl-carousel .owl-stage-outer {
+	 width: 100%;
+	 overflow: hidden;
+}
+ .owl-carousel .owl-dots {
+	 bottom: -15%;
+}
+ .owl-carousel .owl-dots .owl-dot {
+	 background: #333;
+}
+ .owl-carousel .owl-dots .owl-dot.active {
+	 background: #eee;
+}

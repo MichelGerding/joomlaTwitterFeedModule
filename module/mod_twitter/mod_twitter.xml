@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="module" version="3.1.0" client="site" method="upgrade">
+	<name>Twitter</name>
+	<author>Michel Gerding</author>
+	<version>1.0.0</version>
+	<description>Twitter content module</description>
+	<files>
+		<filename>mod_twitter.xml</filename>
+		<filename module="mod_twitter">mod_twitter.php</filename>
+		<filename>index.html</filename>
+		<filename>helper.php</filename>
+		<filename>twitterApiHelper.php</filename>
+		<folder>js</folder>
+		<folder>css</folder>
+		<folder>admin</folder>
+		<folder>tmpl</folder>
+		<folder>sql</folder>
+		<folder>twitterOAuth</folder>
+	</files>
+
+	<config>
+		<fields name="params">
+			<fieldset name="basic">
+				<field name="placeholder" label="Placeholder Image" type="media" default="https://via.placeholder.com/300"/>
+				<field type="radio" name="truncate" label="Truncate" default="0" class="btn-group btn-group-yesno">
+					<option value="0">No</option>
+					<option value="1">Yes</option>
+				</field>
+				<field type="number" name="maxChars" default="50" label="Max Characters" showon="truncate:1" />
+				<field type="radio" name="limit" label="Limit" default="0" class="btn-group btn-group-yesno">
+					<option value="0">No</option>
+					<option value="1">Yes</option>
+				</field>
+				<field type="number" name="maxTweets" default="10" label="Max Tweets to show" showon="limit:1" />
+				<field type="radio" name="showDate" label="Show date" default="0" class="btn-group btn-group-yesno">
+					<option value="0">No</option>
+					<option value="1">Yes</option>
+				</field>
+				<field name="ViewType" type="list" label="Weergave">
+					<option value="All">Alles</option>
+					<option value="F">Fotos</option>
+					<option value="T">Text</option>
+				</field>
+				<field name="saveDir" type="text" label="Save directory" default="images/twitter/" required="true" />
+				<field name="thumbWidth" type="number" label="Thumbnail height" default="400" required="true" />
+				<field name="thumbHeight" type="number" label="Thumbnail width" default="350" required="true" />
+
+				<field type="spacer" hr="true" />
+
+				<field name="profile_name" label="Twitter handle" type="text" required="true" hint="@pagename"/>
+				<field name="api_key" type="text" label="api key" hint="Consumer API key" required="true" />
+				<field name="api_secret" type="text" label="api secret" hint="Consumer API secret" required="true" />
+				<field name="acces_token" type="text" label="access token" hint="Acces token" required="true" />
+				<field name="acces_secret" type="text" label="acess secret" hint="Acces token secret" required="true" />
+				
+				<field type="spacer" hr="true" />
+
+				<field name="breakpoints"
+					type="repeatable"
+					icon="list"
+					description="breakpoints"
+					label="Breakpoints"
+					default='{"breakpoint":["0","600","1000"],
+						"items":["1","2","3"]}'>
+					<fieldset hidden="true" name="list_templates_modal" repeat="true">
+						<field name="breakpoint"
+							label="Breakpoint in pixels"
+							type="number" 
+							hint="Minimum width"/>
+						<field name="items"
+							type="number" 
+							label="Items to show"
+							hint="Amount of images to show"
+							/>
+					</fieldset>
+				</field>
+				<field type="radio" name="loop" label="Loop" default="0" class="btn-group btn-group-yesno" showon="rewind:0">
+					<option value="0">No</option>
+					<option value="1">Yes</option>
+				</field>
+				<field type="radio" name="rewind" label="Rewind" default="0" class="btn-group btn-group-yesno" showon="loop:0">
+					<option value="0">No</option>
+					<option value="1">Yes</option>
+				</field>
+				<field type="radio" name="nav" label="Nav" default="0" class="btn-group btn-group-yesno">
+					<option value="0">No</option>
+					<option value="1">Yes</option>
+				</field>
+				<field type="radio" name="dots" label="Dots" default="0" class="btn-group btn-group-yesno">
+					<option value="0">No</option>
+					<option value="1">Yes</option>
+				</field>
+				<field type="radio" name="lazy_load" label="Lazy load" default="0" class="btn-group btn-group-yesno">
+					<option value="0">No</option>
+					<option value="1">Yes</option>
+				</field>
+				<field type="radio" name="autoplay" label="Autoplay" default="0" class="btn-group btn-group-yesno">
+					<option value="0">No</option>
+					<option value="1">Yes</option>
+				</field>
+				<field type="radio" name="autoplayHoverPause" label="Pause on hover" default="0" class="btn-group btn-group-yesno" showon="autoplay:1">
+					<option value="0">No</option>
+					<option value="1">Yes</option>
+				</field>
+				<field name="autoplaySpeed" type="number" label="autoplay animation speed in ms" default="300" showon="autoplay:1"/>
+
+				
+				<field name="borderColor" type="color" label="Border kleur" default="#FFFFFF" />
+				<field name="borderRadius" type="number" label="Border Width" default="6" />
+				<field name="margin" type="number" label="Margin" default="10" />
+
+				<field name="blurRadius" type="number" label="Blur strength" default="6" />
+				<field name="extraCSS" type="textarea" label="Aditional css" hint="Aditional css to add" />
+			</fieldset>
+			<fieldset name="basic">
+				<field name="aaa" type="text" />
+				<field name="asadaa" type="text" />
+				<field name="aafsaa" type="text" />
+				<field name="aadsaa" type="text" />
+				<field name="aasfaa" type="text" />
+				<field name="aagda" type="text" />
+			</fieldset>
+		</fields>
+	</config>
+
+	<install>
+		<sql>
+			<file driver="mysql" charset="utf8">sql/mysql/install.sql</file>
+		</sql>
+	</install>
+	<uninstall>
+		<sql>
+			<file driver="mysql" charset="utf8">sql/mysql/uninstall.sql</file>
+		</sql>
+	</uninstall>
+	<updateservers>
+		<server type="extension" priority="1" name="Takties twitter update">
+			http://update.takties.nl/mod_twitter/update.xml
+		</server>
+	</updateservers>
+</extension>
+	

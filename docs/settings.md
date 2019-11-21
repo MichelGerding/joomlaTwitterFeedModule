@@ -1,0 +1,33 @@
+##### informatio over the fields on the config page
+
+ if you want to know more info over the fields on the config page you can read about them in this chapter
+- placeholder image: this is a image that shows up if the post you want to show has no text
+- truncate: with this setting you can controll if you want the tweets to be shorted
+    - max characters: with this setting you can select the maximum amount of characters to show
+- limit: this setting is for limiting the amount of posts that you can view on the website 
+    - max tweets to show: limits the amount of tweets visible on the site 
+- show date: show the date or not
+- type of tweet: the type of tweets to show
+    - All: show all tweets. Pictures and text
+    - Pictures: show only tweets with pictures
+    - text: show only tweets with text and no pictures
+- save directory: the directory to save the images in
+- thumbnail height: the heihgt of the image to save
+- thumbnail width: the with of the saved image
+- twitter handle: the twitter handle of the person you want to show tweets from
+- breakpoints: a list of points to show a set amount of tweets on screen
+    - breakpoint in pixels: the amount of pixels it shows the set amount of tweets
+    - items to show: the amount of tweets to show at corresponding breakpoint
+- loop: option for if the list of tweets should loop ( not compatible with rewind )
+- rewind: option for if the list of tweets needs to go to the start automaticaly after reaching the end ( not compatible with loop )
+- nav: option to show the navigation arrows
+- dots: option to show the dots that indicate on wich page of the list you are
+- lazy load: a option to [lazyload](https://en.wikipedia.org/wiki/Lazy_loading "site over lazyloading") the tweets
+- autoplay: a option to automaticaly advance the ist of tweets
+    - pause on hover: a setting to stop the list from advancing when you are hovering over a tweet
+    - autoplay animation in ms: a setting to influense the speed of the animation from switching from slide to slide
+- border color: the color of the border
+- border width: the width of the border
+- margin: the space between tweets
+- blur strength: the strength of the blur effect
+- additional css: additional styling to add to the tweets
