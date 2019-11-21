@@ -1,4 +1,3 @@
-# Joomla Twitter Feed Module
 ### How to use this module
 To use this module you need the followig things:
 - a joomla site
