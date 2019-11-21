@@ -1,3 +1,4 @@
+![headerimg](https://github.com/MichelGerding/joomlaTwitterFeedModule/blob/master/images/twitter%20image.png?raw=true)
 ### How to use this module
 To use this module you need the followig things:
 - a joomla site
