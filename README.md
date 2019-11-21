@@ -1,4 +1,3 @@
-# Joomla Twitter Feed Module
 ### How to use this module
 To use this module you need the followig things:
 - a joomla site
@@ -23,7 +22,8 @@ To use this module you need the followig things:
  if you want to install the module by using a download link got to the chapter **installing using the download link**.
  but if you downloaded the zip file you need to follow the steps under the chapter **installing using the zip file**.
  if you want to install using a folder skip to the chapter **installing using a folder**.
- #### Installing using a zip file
+ 
+#### Installing using a zip file
  
  ![Go to the upload package tab](https://github.com/MichelGerding/joomlaTwitterFeedModule/blob/master/images/image_install_3.PNG?raw=true "Go to the upload package tab")
  
